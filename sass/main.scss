@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+// order is important - rest, vars etc first and then your main rules
+@import "modules/reset";
+@import "modules/vars";
+
+@import "modules/queries";
+
+@import "modules/defaults";
+@import "modules/biopanel";
+=======
+// import all of your partials first
+// order is important!
+@import "modules/reset";
+@import "modules/vars";
+@import "modules/queries";
+
+@import "modules/defaults";
+>>>>>>> b4349ef4112c37bc14b9b56e6b5b40fdab302ff6
