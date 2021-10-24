@@ -1,0 +1,125 @@
+#site_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:#DBCBBD;
+
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: #290001;
+  }
+  #intro {
+    margin-bottom: 20px;
+  }
+
+//----STYLES FOR BUTTONS-----
+  .box3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 20px 10px 20px;
+    background-color: #DBCBBD;
+  }
+  .button { 
+    width: 120px;
+    margin: 12px; 
+    padding: 10px;
+
+    color: #DBCBBD;
+    background-color: #290001;
+    cursor: pointer;
+    border-radius: 20px; 
+    box-shadow: 5px 5px 5px grey;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .button:hover {
+    background-color: #87431D;
+  }
+}
+
+
+//----STYLES FOR DIALOGUE BOX ON CLICK-----
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #87431D;
+  max-width: 350px;
+  box-shadow: 8px 8px 8px #d3d3d3;
+  margin: auto;
+  color: #290001;
+  border-radius: 3px;
+  margin: 8px 6px 8px 6px;
+  padding:10px;
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .picture {
+    img {
+      margin-top: 20px;
+    }
+  }
+ 
+  .nameofthing {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .explain {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+  }
+}
+
+//----RESIZING FOR IPAD & WEB VIEW---------- 
+@media screen and (min-width: 768px) {
+  .infobox {
+    max-width: 400px;
+    margin: 10px 15px 10px 15px;
+    padding:20px;
+
+          h2 {
+            font-size: 18px;
+          }
+          .nameofthing {
+            margin-top: 10px;
+            font-size: 15px;
+            font-size: 16px;
+          }
+          .explain {
+            margin-bottom: 25px;
+            margin-top: 8px;
+            font-size: 14px;
+            
+          }
+  }
+  .box3 {
+    margin: 20px 50px 20px 50px;
+    flex-direction: column;
+  }
+  .button {
+    width: 160px;
+    margin: 20px; 
+    padding: 15px;
+  }
+}
+
+.show {display: block;}
+.hidden {display: none;}
