@@ -6,14 +6,25 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color:#DBCBBD;
+  font-family: Helvetica, sans-serif;
 
-  h1 {
-    text-align: center;
-    margin-top: 10px;
-    color: #290001;
-  }
+  
   #intro {
     margin-bottom: 20px;
+    #gif {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #290001;
+    }
   }
 
 //----STYLES FOR BUTTONS-----
@@ -27,16 +38,15 @@
     background-color: #DBCBBD;
   }
   .button { 
-    width: 120px;
-    margin: 12px; 
-    padding: 10px;
-
+    margin: 10px; 
+    padding: 8px 15px 8px 15px;
     color: #DBCBBD;
     background-color: #290001;
+    box-shadow: 8px 8px 8px #BAABA0;
     cursor: pointer;
     border-radius: 20px; 
-    box-shadow: 5px 5px 5px grey;
-    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
     font-weight: bold;
   }
   .button:hover {
@@ -52,24 +62,19 @@
   align-items: center;
   justify-content: center;
   background-color: #87431D;
-  max-width: 350px;
-  box-shadow: 8px 8px 8px #d3d3d3;
+  box-shadow: 8px 8px 8px #BAABA0;
   margin: auto;
   color: #290001;
   border-radius: 3px;
   margin: 8px 6px 8px 6px;
   padding:10px;
-
-  h2 {
-    font-size: 16px;
-  }
+  width: 500px;
 
   .picture {
     img {
       margin-top: 20px;
     }
   }
- 
   .nameofthing {
     margin-top: 10px;
     font-size: 15px;
@@ -78,7 +83,6 @@
     font-size: 14px;
     font-family: Helvetica, sans-serif;
   }
-  
   .explain {
     text-align: left;
     margin-bottom: 25px;
@@ -91,23 +95,17 @@
 //----RESIZING FOR IPAD & WEB VIEW---------- 
 @media screen and (min-width: 768px) {
   .infobox {
-    max-width: 400px;
+    max-width: 600px;
     margin: 10px 15px 10px 15px;
-    padding:20px;
-
-          h2 {
-            font-size: 18px;
-          }
+    padding:30px 20px 5px 20px;
           .nameofthing {
-            margin-top: 10px;
-            font-size: 15px;
-            font-size: 16px;
+            margin-top: 20px;
+            font-size: 22px;
           }
           .explain {
             margin-bottom: 25px;
             margin-top: 8px;
-            font-size: 14px;
-            
+            font-size: 17px;
           }
   }
   .box3 {
@@ -118,8 +116,8 @@
     width: 160px;
     margin: 20px; 
     padding: 15px;
+    font-size: 14px;
   }
 }
-
 .show {display: block;}
 .hidden {display: none;}
