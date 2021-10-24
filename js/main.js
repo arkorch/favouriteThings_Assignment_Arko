@@ -10,11 +10,11 @@ let things = {};
         .catch(error => console.error(error));
     }
 //----- WRITE function to getdata from data.json file -----
-    function buildData(event) {
+    function showThings(event) {
         console.log("clicked"); //this should show on console in browser
         let panel = document.querySelector(".infobox");
-
         if (panel) {
+            //To show infobox on click
             panel.classList.remove("hidden");
             //To select children of InfoBox in sequence 0,1,2...
             let containers = panel.children;
@@ -25,5 +25,6 @@ let things = {};
               }
     };
     //To watch for clicks to button on webpage
-    buttons.forEach(btn => (btn.addEventListener("click", buildData)));
+    buttons.forEach(btn => (btn.addEventListener("click", showThings)));
+    //The get data function on top
     getData();
